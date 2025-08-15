@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>INSANE 핸드아웃 생성기</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/imgs/favicon.png" type="image/png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</head>
+<body>
+  <h1>공개 핸드아웃 생성기</h1>
+
+  <div class="input-area">
+    <input type="text" id="input1" placeholder="입력값 1">
+    <input type="text" id="input2" placeholder="입력값 2">
+    <input type="text" id="input3" placeholder="입력값 3">
+    <input type="text" id="input4" placeholder="입력값 4">
+    <button id="downloadBtn1">이미지 다운로드</button>
+  </div>
+
+  <div id="preview1" class="preview">
+    <div class="handout">
+      <h2>HANDOUT</h2>
+      <table>
+        <tr>
+          <td class="cell bold">이름</td>
+          <td class="cell left" id="out1">(입력값 1)</td>
+        </tr>
+        <tr>
+          <td class="cell bold center" colspan="2" id="out2">(입력값 2)</td>
+        </tr>
+        <tr>
+          <td class="cell left" colspan="2" id="out3">(입력값 3)</td>
+        </tr>
+        <tr>
+          <td class="cell left" colspan="2" id="out4">(입력값 4)</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <h1>비공개 핸드아웃 생성기</h1>
+
+  <div class="input-area">
+    <input type="text" id="input5" placeholder="입력값 5">
+    <input type="text" id="input6" placeholder="입력값 6">
+    <button id="downloadBtn2">이미지 다운로드</button>
+  </div>
+
+  <div id="preview2" class="preview black">
+    <div class="handout">
+      <h2 class="cell">HANDOUT</h2>
+      <table>
+        <tr>
+          <td class="cell bold center" colspan="2">비밀</td>
+        </tr>
+        <tr>
+          <td class="cell bold secret-area">쇼크</td>
+          <td class="cell left secret-area" id="out5">(입력값 5)</td>
+        </tr>
+        <tr>
+          <td class="cell left secret-area" colspan="2" id="out6">(입력값 6)</td>
+        </tr>
+        <tr>
+          <td class="cell bold center" colspan="2">이 비밀을 스스로 밝힐 수는 없다.</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

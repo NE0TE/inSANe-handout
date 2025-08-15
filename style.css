@@ -1,0 +1,67 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+.preview {
+  width: 300px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #000;
+}
+
+.handout {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+h2 {
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.cell {
+  border: 1px solid #000;
+  padding: 5px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.preview.black {
+  background: #000;
+}
+
+.preview.black .cell {
+  color: #fff;
+  border-color: #fff;
+}
+
+.preview.black .cell.secret-area {
+  background: #fff;
+  border-color: #000;
+  border-left-color: #fff;
+  border-right-color: #fff;
+  color: #000;
+}
