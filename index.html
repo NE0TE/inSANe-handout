@@ -11,14 +11,12 @@
 </head>
 <body>
   <h1>공개 핸드아웃 생성기</h1>
-
   <div class="input-area">
-    <textarea id="input1" placeholder="입력값 1"></textarea>
-    <textarea id="input2" placeholder="입력값 2"></textarea>
-    <textarea id="input3" placeholder="입력값 3"></textarea>
+    <textarea id="input1" placeholder="이름"></textarea>
+    <textarea id="input2" placeholder="부제"></textarea>
+    <textarea id="input3" placeholder="내용"></textarea>
     <button id="downloadBtn1">이미지 다운로드</button>
   </div>
-
   <div id="preview1" class="preview">
     <div class="handout">
       <h2>HANDOUT</h2>
@@ -26,31 +24,30 @@
         <tr>
           <td class="cell bold">
             <select id="label1">
+              <option value="선택">선택</option>
               <option value="이름">이름</option>
               <option value="장치">장치</option>
               <option value="장소">장소</option>
             </select>
           </td>
-          <td class="cell left" id="out1">(입력값 1)</td>
+          <td class="cell left" id="out1">(이름)</td>
         </tr>
         <tr>
-          <td class="cell bold center" colspan="2" id="out2">(입력값 2)</td>
+          <td class="cell bold center" colspan="2" id="out2">(부제)</td>
         </tr>
         <tr>
-          <td class="cell left" colspan="2" id="out3">(입력값 3)</td>
+          <td class="cell left" colspan="2" id="out3">(내용)</td>
         </tr>
       </table>
     </div>
   </div>
 
   <h1>비공개 핸드아웃 생성기</h1>
-
   <div class="input-area">
-    <textarea id="input5" placeholder="입력값 5"></textarea>
-    <textarea id="input6" placeholder="입력값 6"></textarea>
+    <textarea id="input5" placeholder="이름"></textarea>
+    <textarea id="input6" placeholder="내용"></textarea>
     <button id="downloadBtn2">이미지 다운로드</button>
   </div>
-
   <div id="preview2" class="preview black">
     <div class="handout">
       <h2 class="cell">HANDOUT</h2>
@@ -61,14 +58,15 @@
         <tr>
           <td class="cell bold secret-area">
             <select id="label5">
+              <option value="선택">선택</option>
               <option value="쇼크">쇼크</option>
               <option value="광기">광기</option>
             </select>
           </td>
-          <td class="cell left secret-area" id="out5">(입력값 5)</td>
+          <td class="cell left secret-area" id="out5">(이름)</td>
         </tr>
         <tr>
-          <td class="cell left secret-area" colspan="2" id="out6">(입력값 6)</td>
+          <td class="cell left secret-area" colspan="2" id="out6">(내용)</td>
         </tr>
         <tr>
           <td class="cell bold center" colspan="2">이 비밀을 스스로 밝힐 수는 없다.</td>
@@ -78,4 +76,3 @@
   </div>
 </body>
 </html>
-
